@@ -6,4 +6,4 @@ Section: 8-Dahlia
 
 [Click here to view hello.py](q1/hello.py)
 
-[Click here to view hello.py](q1/Pangilinan_Kyle_Directions.py)
+[Click here to view Directions.py](q1/Pangilinan_Kyle_Directions.py)
