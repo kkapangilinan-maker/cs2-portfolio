@@ -205,5 +205,3 @@ A program should avoid collecting unnecessary information because private data c
 5. How did SG7's input validation concepts become security practices in SG8?
 
 The input validation concepts from SG7 help make sure that programs accept only appropriate information. In SG8, these checks can also help protect data and reduce unsafe input.
-
-← Back to Main Portfolio
