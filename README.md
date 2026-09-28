@@ -7,3 +7,10 @@ Section: 8-Dahlia
 [Click here to view hello.py](q1/hello.py)
 
 [Click here to view Directions.py](q1/Pangilinan_Kyle_Directions.py)
+
+[Click here to view score_checker.md](q1/score_checker.md)
+
+[Click here to view score_checker.py](./q1/score_checker.py)
+
+[Click here to view score_checker_flowchart.png](./q1/score_checker_flowchart.png)
+
