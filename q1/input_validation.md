@@ -7,13 +7,12 @@ Overview
 
 This activity shows a program I created that checks the information of a student for registration. The program checks the student's name, age, grade level, email address, and registration code before accepting the registration.
 
-Data Captured	            Expected Input	              Validation Type	               Invalid Input Example	              Validation Rule	                            Error Message
-Student Name	            A name	                     Presence Validation	                  Blank	                           Name must not be blank	                 Student name is required.
-Age	                  An integer from 11 to 18	        Data Type and Range Validation	   fourteen / 25	                 Age must be a number and from 11 to 18	     Age must be a number. / Age must be from 11 to 18.
-Grade Level	          7, 8, 9, 10, 11, or 12	          Acceptable Value Validation	         13	                             Grade level must be 7–12	                  Invalid grade level.
-Email Address	        Email containing @ and .	        Pattern Validation	             studentpshs.edu.ph	                  Email must contain @ and .	                Invalid email address.
-Registration Code	    Exactly 6 characters	              Length Validation	                 ABC	                          Code must contain exactly 6 characters	    The registration code must contain exactly 6 characters.
-
+Data Captured	Expected Input	Validation Type	Invalid Input Example	Validation Rule	Error Message
+Student Name	A name	Presence Validation	Blank	Name must not be blank	Student name is required.
+Age	An integer from 11 to 18	Data Type and Range Validation	fourteen, 25	Age must be a number and from 11 to 18	Age must be a number. / Age must be from 11 to 18.
+Grade Level	7, 8, 9, 10, 11, or 12	Acceptable Value Validation	13	Grade level must be 7–12	Invalid grade level.
+Email Address	Email containing @ and .	Pattern Validation	studentpshs.edu.ph	Email must contain @ and .	Invalid email address.
+Registration Code	Exactly 6 characters	Length Validation	ABC	Code must contain exactly 6 characters	The registration code must contain exactly 6 characters.
 Validation Questions:
 
 1. Why should the student name not be blank?
@@ -111,13 +110,13 @@ Final Code:
 
 student_name = input("Enter student name: ")
 
-# Check if student name is blank
+==Check if student name is blank
 if student_name == "":
     print("REGISTRATION NOT ACCEPTED")
     print("Student name is required.")
     exit()
 
-# Check if age is a number
+==Check if age is a number
 try:
     age = int(input("Enter age: "))
 except ValueError:
@@ -125,7 +124,7 @@ except ValueError:
     print("Age must be a number.")
     exit()
 
-# Check if age is within the required range
+==Check if age is within the required range
 if age < 11 or age > 18:
     print("REGISTRATION NOT ACCEPTED")
     print("Age must be from 11 to 18.")
@@ -133,7 +132,7 @@ if age < 11 or age > 18:
 
 grade_level = input("Enter grade level: ")
 
-# Check if grade level is accepted
+==Check if grade level is accepted
 if grade_level not in ["7", "8", "9", "10", "11", "12"]:
     print("REGISTRATION NOT ACCEPTED")
     print("Invalid grade level.")
@@ -141,7 +140,7 @@ if grade_level not in ["7", "8", "9", "10", "11", "12"]:
 
 email = input("Enter email: ")
 
-# Check if email contains @ and .
+==Check if email contains @ and .
 if "@" not in email or "." not in email:
     print("REGISTRATION NOT ACCEPTED")
     print("Invalid email address.")
@@ -149,13 +148,13 @@ if "@" not in email or "." not in email:
 
 registration_code = input("Enter registration code: ")
 
-# Check if registration code has exactly 6 characters
+==Check if registration code has exactly 6 characters
 if len(registration_code) != 6:
     print("REGISTRATION NOT ACCEPTED")
     print("The registration code must contain exactly 6 characters.")
     exit()
 
-# All inputs are goods
+==All inputs are goods
 print("")
 print("REGISTRATION ACCEPTED")
 print("")
@@ -180,17 +179,17 @@ Length Validation:
 - I checked whether the registration code has exactly 6 characters.
 
 Part D - Testing
-Test	                Input / Condition	              Validation Being Tested	              Expected Output	                                            Actual Output	                                            Result
-1	                    All inputs valid	              Normal case	                          Registration accepted	                                      Registration accepted	                                    PASS
-2	                    Blank student name	            Presence	                            Student name is required.	                                  Student name is required.	                                PASS
-3	                    Age = fourteen	                Data type	                            Age must be a number.	                                      Age must be a number.	                                    PASS
-4	                    Age = 11	                      Minimum boundary	                    Registration accepted	                                      Registration accepted	                                    PASS
-5	                    Age = 18	                      Maximum boundary	                    Registration accepted	                                      Registration accepted	                                    PASS
-6	                    Age = 10	                      Range	                                Age must from 11 to 18.	                                    Age must be from 11 to 18.	                              PASS
-7	                    Grade Level = 13	              Acceptable value	                    Invalid grade level.	                                      Invalid grade level.	                                    PASS
-8	                    Email = studentpshs.edu.ph	    Pattern	                              Invalid email address.	                                    Invalid email address.	                                  PASS
-9	                    Registration Code = ABC	        Length	                              The registration code must contain exactly 6 characters.	  The registration code must contain exactly 6 characters.	PASS
-10	                  Registration Code = CS2026	    Valid length	                        Registration accepted	                                      Registration accepted	                                    PASS
+Test	Input / Condition	Validation Being Tested	Expected Output	Actual Output	Result
+1	All inputs valid	Normal case	Registration accepted	Registration accepted	PASS
+2	Blank student name	Presence	Student name is required.	Student name is required.	PASS
+3	Age = fourteen	Data type	Age must be a number.	Age must be a number.	PASS
+4	Age = 11	Minimum boundary	Registration accepted	Registration accepted	PASS
+5	Age = 18	Maximum boundary	Registration accepted	Registration accepted	PASS
+6	Age = 10	Range	Age must be from 11 to 18.	Age must be from 11 to 18.	PASS
+7	Grade Level = 13	Acceptable value	Invalid grade level.	Invalid grade level.	PASS
+8	Email = studentpshs.edu.ph	Pattern	Invalid email address.	Invalid email address.	PASS
+9	Registration Code = ABC	Length	The registration code must contain exactly 6 characters.	The registration code must contain exactly 6 characters.	PASS
+10	Registration Code = CS2026	Valid length	Registration accepted	Registration accepted	PASS
 
 Part E - Output Verification
 Verification Test 1
