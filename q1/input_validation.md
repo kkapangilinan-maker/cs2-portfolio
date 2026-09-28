@@ -159,17 +159,28 @@ else:
 Validation Techniques Used:
 
 Presence Validation:
-    - I used presence validation to check whether the student name is blank.
+
+I used presence validation to check whether the student name is blank.
+
 Data Type Validation:
-    - I used data type validation with try and except to check whether the age is a number.
+
+I used data type validation with try and except to check whether the age is a number.
+
 Range Validation:
-    - I checked whether the age is from 11 to 18.
+
+I checked whether the age is from 11 to 18.
+
 Acceptable Value Validation:
-    - I checked whether the grade level is one of the accepted values from 7 to 12.
+
+I checked whether the grade level is one of the accepted values from 7 to 12.
+
 Pattern Validation:
-    - I checked whether the email contains both @ and ..
+
+I checked whether the email contains both @ and ..
+
 Length Validation:
-    - I checked whether the registration code has exactly 6 characters.
+
+I checked whether the registration code has exactly 6 characters.
 
 Part D - Testing
 | Test | Input / Condition | Validation Being Tested | Expected Output | Actual Output | Result |
