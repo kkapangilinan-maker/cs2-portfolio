@@ -14,3 +14,8 @@ Section: 8-Dahlia
 
 [Click here to view score_checker_flowchart.png](./q1/score_checker_flowchart.png)
 
+[Click here to view workshop_validator.py](workshop_validator.py)
+
+[Click here to view input_validation.md](q1/input_validation.md)
+
+
