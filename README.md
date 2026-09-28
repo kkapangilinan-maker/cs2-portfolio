@@ -18,4 +18,6 @@ Section: 8-Dahlia
 
 [Click here to view input_validation.md](q1/input_validation.md)
 
+[Click here to view secure_registration.py](q1/secure_registration.py)
 
+[Click here to view cybersecurity.md](q1/cybersecurity.md)
