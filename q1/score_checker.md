@@ -69,14 +69,14 @@ Source Code:
 score_checker.py
 
 Final Code
-# Ask the user for score
+#Ask the user for score
 student_score = int(input("Enter student score: "))
 
-# Check if score is between 0 and 100
+#Check if score is between 0 and 100
 if student_score < 0 or student_score > 100:
     print("Invalid Score.")
 
-# Check score and give the correct classification
+#Check score and give the correct classification
 elif student_score >= 90:
     print("Outstanding")
 elif student_score >= 80:
@@ -86,15 +86,16 @@ elif student_score >= 75:
 else:
     print("Needs Improvement")
 
-Test	          Input	            Purpose
-1	                -1	            Below minimum
-2	                 0	            Minimum boundary
-3	                 74	            Below Satisfactory boundary
-4	                 75	            Satisfactory boundary
-5	                 80	            Very Satisfactory boundary
-6	                 90	            Outstanding boundary
-7	                100	            Maximum boundary
-8	                101	            Above maximum
+| Test | Input | Purpose |
+|---:|---:|---|
+| 1 | -1 | Below minimum |
+| 2 | 0 | Minimum boundary |
+| 3 | 74 | Below Satisfactory boundary |
+| 4 | 75 | Satisfactory boundary |
+| 5 | 80 | Very Satisfactory boundary |
+| 6 | 90 | Outstanding boundary |
+| 7 | 100 | Maximum boundary |
+| 8 | 101 | Above maximum |
 
 Testing Reflection
 1. Why is it important to test the values 0 and 100?
