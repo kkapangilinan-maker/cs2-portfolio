@@ -7,13 +7,13 @@ Overview
 
 This activity shows a program I created that checks the information of a student for registration. The program checks the student's name, age, grade level, email address, and registration code before accepting the registration.
 
-Data Captured	Expected Input	Validation Type	Invalid Input Example	Validation Rule	Error Message
-Student Name	A name	Presence Validation	Blank	Name must not be blank	Student name is required.
-Age	An integer from 11 to 18	Data Type and Range Validation	fourteen, 25	Age must be a number and from 11 to 18	Age must be a number. / Age must be from 11 to 18.
-Grade Level	7, 8, 9, 10, 11, or 12	Acceptable Value Validation	13	Grade level must be 7–12	Invalid grade level.
-Email Address	Email containing @ and .	Pattern Validation	studentpshs.edu.ph	Email must contain @ and .	Invalid email address.
-Registration Code	Exactly 6 characters	Length Validation	ABC	Code must contain exactly 6 characters	The registration code must contain exactly 6 characters.
-Validation Questions:
+| Data Captured | Expected Input | Validation Type | Invalid Input Example | Validation Rule | Error Message |
+|---|---|---|---|---|---|
+| Student Name | A name | Presence Validation | Blank | Name must not be blank | Student name is required. |
+| Age | An integer from 11 to 18 | Data Type and Range Validation | `fourteen`, `25` | Age must be a number and from 11 to 18 | Age must be a number. / Age must be from 11 to 18. |
+| Grade Level | 7, 8, 9, 10, 11, or 12 | Acceptable Value Validation | `13` | Grade level must be 7–12 | Invalid grade level. |
+| Email Address | Email containing `@` and `.` | Pattern Validation | `studentpshs.edu.ph` | Email must contain `@` and `.` | Invalid email address. |
+| Registration Code | Exactly 6 characters | Length Validation | `ABC` | Code must contain exactly 6 characters | The registration code must contain exactly 6 characters. |
 
 1. Why should the student name not be blank?
 
@@ -179,18 +179,20 @@ Length Validation:
 - I checked whether the registration code has exactly 6 characters.
 
 Part D - Testing
-Test	Input / Condition	Validation Being Tested	Expected Output	Actual Output	Result
-1	All inputs valid	Normal case	Registration accepted	Registration accepted	PASS
-2	Blank student name	Presence	Student name is required.	Student name is required.	PASS
-3	Age = fourteen	Data type	Age must be a number.	Age must be a number.	PASS
-4	Age = 11	Minimum boundary	Registration accepted	Registration accepted	PASS
-5	Age = 18	Maximum boundary	Registration accepted	Registration accepted	PASS
-6	Age = 10	Range	Age must be from 11 to 18.	Age must be from 11 to 18.	PASS
-7	Grade Level = 13	Acceptable value	Invalid grade level.	Invalid grade level.	PASS
-8	Email = studentpshs.edu.ph	Pattern	Invalid email address.	Invalid email address.	PASS
-9	Registration Code = ABC	Length	The registration code must contain exactly 6 characters.	The registration code must contain exactly 6 characters.	PASS
-10	Registration Code = CS2026	Valid length	Registration accepted	Registration accepted	PASS
+| Test | Input / Condition | Validation Being Tested | Expected Output | Actual Output | Result |
+|---:|---|---|---|---|---|
+| 1 | All inputs valid | Normal case | REGISTRATION ACCEPTED | REGISTRATION ACCEPTED | PASS |
+| 2 | Blank student name | Presence | Student name is required. | Student name is required. | PASS |
+| 3 | Age = `fourteen` | Data type | Age must be a number. | Age must be a number. | PASS |
+| 4 | Age = `11` | Minimum boundary | REGISTRATION ACCEPTED | REGISTRATION ACCEPTED | PASS |
+| 5 | Age = `18` | Maximum boundary | REGISTRATION ACCEPTED | REGISTRATION ACCEPTED | PASS |
+| 6 | Age = `10` | Range | Age must be from 11 to 18. | Age must be from 11 to 18. | PASS |
+| 7 | Grade Level = `13` | Acceptable value | Invalid grade level. | Invalid grade level. | PASS |
+| 8 | Email = `studentpshs.edu.ph` | Pattern | Invalid email address. | Invalid email address. | PASS |
+| 9 | Registration Code = `ABC` | Length | The registration code must contain exactly 6 characters. | The registration code must contain exactly 6 characters. | PASS |
+| 10 | Registration Code = `CS2026` | Valid length | REGISTRATION ACCEPTED | REGISTRATION ACCEPTED | PASS |
 
+Important: For the Actual Output and Result columns, use what you actually get when you run your program. Don't claim PASS if you haven't tested it yet.
 Part E - Output Verification
 Verification Test 1
 
