@@ -38,9 +38,9 @@ elif len(registration_code) != 6:
     print("The registration code must contain exactly 6 characters.")
 
 else:
-    print("------------------------------")
+    print("")
     print("REGISTRATION ACCEPTED")
-    print("------------------------------")
+    print("")
     print("Student:", student_name)
     print("Age:", age)
     print("Grade Level:", grade_level)
