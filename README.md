@@ -4,6 +4,7 @@ Name: Kyle Kiluma A. Pangilinan
 
 Section: 8-Dahlia
 
+1st Quarter:
 [Click here to view hello.py](q1/hello.py)
 
 [Click here to view Directions.py](q1/Pangilinan_Kyle_Directions.py)
@@ -21,3 +22,6 @@ Section: 8-Dahlia
 [Click here to view secure_registration.py](q1/secure_registration.py)
 
 [Click here to view cybersecurity.md](q1/cybersecurity.md)
+
+2nd Quarter:
+
