@@ -25,3 +25,5 @@ Section: 8-Dahlia
 
 2nd Quarter:
 
+[Click here to view canteen_purchase_calculator.py](q2/canteen_purchase_calculator.py)
+
