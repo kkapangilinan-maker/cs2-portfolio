@@ -27,3 +27,5 @@ Section: 8-Dahlia
 
 [Click here to view canteen_purchase_calculator.py](q2/canteen_purchase_calculator.py)
 
+[Click here to view Student_performance_evaluator.py](q2/Student_performance_evaluator.py)
+
