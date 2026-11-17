@@ -29,3 +29,4 @@ Section: 8-Dahlia
 
 [Click here to view Student_performance_evaluator.py](q2/Student_performance_evaluator.py)
 
+[Click here to view Exercise_1.py](q2/Exercise_1.py)
