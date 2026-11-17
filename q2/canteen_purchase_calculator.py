@@ -28,3 +28,7 @@ else:
     print(f"Additional amount needed: PHP {amount:.2f}")
 # Displays the total cost and the change or shortage.
   
+# Calculate_total gets the total price by getting the item price and multiplying it by the quantity, and calculate chane gets the change by subtracting the total price from the payment or if the total price is larger than the payment, it subtracts the payment from the total price to get the amount of money still needed.
+# Parameters are variable names written in the function while defining, while arguments are the actual values of those variables.
+# The returned total is stored in the variable total_cost and is used in the function calculate_total to get the change.
+# Separating total calculation from change calculation makes the program easier to organize with each function having its own purpose.
